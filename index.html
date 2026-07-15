@@ -1892,19 +1892,11 @@ function openReportForm(id){
 }
 
 function buildReportText(data){
-  const tgl = new Date().toLocaleString('id-ID', {day:'2-digit', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit'});
-  return `*LAPORAN GANGGUAN JARINGAN*
-Data Inet Polda Sulawesi Barat
-
-1. Nama Ruangan : ${data.namaRuangan}
-2. Customer ID  : ${data.customerId}
-3. Serial Number: ${data.serialNumber}
-4. Bandwidth    : ${data.bandwidth}
-5. Lokasi       : ${data.lokasi}
-6. Keluhan      : ${data.keluhan}
-7. PIC          : ${data.pic}
-
-Dilaporkan: ${tgl}`;
+  return `${data.namaRuangan}
+${data.customerId}
+${data.serialNumber}
+${data.keluhan}
+${data.pic}`;
 }
 
 function showReportResult(data){
