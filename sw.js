@@ -1,4 +1,4 @@
-const CACHE_NAME = 'simjaringan-v1';
+const CACHE_NAME = 'simjaringan-v2';
 const ASSETS = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './embedded_data.js', './xlsx.full.min.js'];
 
 self.addEventListener('install', (event) => {
